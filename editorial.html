@@ -46,7 +46,7 @@
 									<section>
 
     <h2>📥 Pendientes</h2>
-
+<p id="pendientes">Cargando...</p>
     <ul>
         <li>Historia de Randy</li>
         <li>ORION Fase 2</li>
@@ -55,7 +55,7 @@
     <hr />
 
     <h2>📝 En revisión</h2>
-
+<p id="revisión">Cargando...</p>
     <ul>
         <li>Generación 2026</li>
     </ul>
@@ -63,7 +63,7 @@
     <hr />
 
     <h2>✅ Aprobados</h2>
-
+<p id="aprobados">Cargando...</p>
     <ul>
         <li>Bienvenidos a La Órbita</li>
     </ul>
@@ -71,7 +71,7 @@
     <hr />
 
     <h2>🌎 Publicados</h2>
-
+<p id="publicados">Cargando...</p>
     <ul>
         <li>Primer Boletín de Randy</li>
         <li>Misión Pánuco</li>
@@ -210,5 +210,25 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+<script>
+fetch('datos-editoriales.json')
+  .then(response => response.json())
+  .then(data => {
+
+    document.getElementById('pendientes').innerHTML =
+      data.pendientes;
+
+    document.getElementById('revision').innerHTML =
+      data.revision;
+
+    document.getElementById('aprobados').innerHTML =
+      data.aprobados;
+
+    document.getElementById('publicados').innerHTML =
+      data.publicados;
+
+  });
+</script>
+		
 	</body>
 </html>
