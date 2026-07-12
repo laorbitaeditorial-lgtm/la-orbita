@@ -55,7 +55,7 @@
     <hr />
 
     <h2>📝 En revisión</h2>
-<p id="revisión">Cargando...</p>
+<p id="revision">Cargando...</p>
     <ul>
         <li>Generación 2026</li>
     </ul>
@@ -210,22 +210,20 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-<script>
+		<script>
 fetch('datos-editoriales.json')
   .then(response => response.json())
   .then(data => {
 
-    document.getElementById('pendientes').innerHTML =
-      data.pendientes;
+    console.log("Pendientes:", document.getElementById('pendientes'));
+    console.log("Revision:", document.getElementById('revision'));
+    console.log("Aprobados:", document.getElementById('aprobados'));
+    console.log("Publicados:", document.getElementById('publicados'));
 
-    document.getElementById('revision').innerHTML =
-      data.revision;
-
-    document.getElementById('aprobados').innerHTML =
-      data.aprobados;
-
-    document.getElementById('publicados').innerHTML =
-      data.publicados;
+    document.getElementById('pendientes').innerHTML = data.pendientes;
+    document.getElementById('revision').innerHTML = data.revision;
+    document.getElementById('aprobados').innerHTML = data.aprobados;
+    document.getElementById('publicados').innerHTML = data.publicados;
 
   });
 </script>
