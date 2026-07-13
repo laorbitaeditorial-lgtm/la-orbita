@@ -45,6 +45,14 @@
 
 									<section>
 
+	<hr />
+
+<h2>📄 Detalles del artículo</h2>
+
+<div id="detalle-articulo">
+    Selecciona un artículo para ver sus detalles.
+</div>
+
     <h2>📥 Pendientes</h2>
 <p id="pendientes">Cargando...</p>
     <ul>
@@ -84,14 +92,7 @@
 <ul id="lista-archivados"></ul>
 </ul>			
 
-	<hr />
-
-<h2>📄 Detalles del artículo</h2>
-
-<div id="detalle-articulo">
-    Selecciona un artículo para ver sus detalles.
-</div>
-
+	
 							<!--    <p> </p>
 									<p> </p>
 									<p> </p> 
@@ -280,7 +281,7 @@ data.articulos.forEach(articulo => {
     const estado = articulo["estado"];
 
     const li = document.createElement('li');
-    li.innerHTML = `#`;
+    li.innerHTML = `Material`;
 
 	
 li.onclick = function () {
