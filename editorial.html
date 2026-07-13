@@ -82,7 +82,16 @@
 
 <ul>
 <ul id="lista-archivados"></ul>
-</ul>								
+</ul>			
+
+	<hr />
+
+<h2>📄 Detalles del artículo</h2>
+
+<div id="detalle-articulo">
+    Selecciona un artículo para ver sus detalles.
+</div>
+
 							<!--    <p> </p>
 									<p> </p>
 									<p> </p> 
@@ -271,7 +280,20 @@ data.articulos.forEach(articulo => {
     const estado = articulo["estado"];
 
     const li = document.createElement('li');
-    li.textContent = titulo;
+    li.innerHTML = `#`;
+
+	
+li.onclick = function () {
+
+    document.getElementById('detalle-articulo').innerHTML = `
+        <strong>Título:</strong> ${titulo}<br>
+        <strong>Autor:</strong> ${articulo["autor\n"] || articulo["autor"]}<br>
+        <strong>Correo:</strong> ${articulo["correo\n"] || articulo["correo"]}<br>
+        <strong>Estado:</strong> ${estado}
+    `;
+
+};
+
 
     if (estado === 'Pendiente')
         pendientes.appendChild(li);
