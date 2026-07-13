@@ -48,8 +48,7 @@
     <h2>📥 Pendientes</h2>
 <p id="pendientes">Cargando...</p>
     <ul>
-        <li>Historia de Randy</li>
-        <li>ORION Fase 2</li>
+       <ul id="lista-pendientes"></ul>
     </ul>
 
     <hr />
@@ -57,7 +56,7 @@
     <h2>📝 En revisión</h2>
 <p id="revision">Cargando...</p>
     <ul>
-        <li>Generación 2026</li>
+        <ul id="lista-revision"></ul>
     </ul>
 
     <hr />
@@ -65,7 +64,7 @@
     <h2>✅ Aprobados</h2>
 <p id="aprobados">Cargando...</p>
     <ul>
-        <li>Bienvenidos a La Órbita</li>
+       <ul id="lista-aprobados"></ul>
     </ul>
 
     <hr />
@@ -73,8 +72,7 @@
     <h2>🌎 Publicados</h2>
 <p id="publicados">Cargando...</p>
     <ul>
-        <li>Primer Boletín de Randy</li>
-        <li>Misión Pánuco</li>
+       <ul id="lista-publicados"></ul>
     </ul>
 
   <hr />
@@ -83,7 +81,7 @@
 <p id="archivados">Cargando...</p>
 
 <ul>
-    <li>Ejemplo de artículo archivado</li>
+<ul id="lista-archivados"></ul>
 </ul>								
 							<!--    <p> </p>
 									<p> </p>
@@ -225,12 +223,57 @@ fetch('datos-editoriales.json')
     console.log("Revision:", document.getElementById('revision'));
     console.log("Aprobados:", document.getElementById('aprobados'));
     console.log("Publicados:", document.getElementById('publicados'));
+	console.log("Archivados:", document.getElementById('archivados'));
 	  
 document.getElementById('pendientes').innerHTML = data.estadisticas.pendientes;
 document.getElementById('revision').innerHTML = data.estadisticas.revision;
 document.getElementById('aprobados').innerHTML = data.estadisticas.aprobados;
 document.getElementById('publicados').innerHTML = data.estadisticas.publicados;
 document.getElementById('archivados').innerHTML = data.estadisticas.archivados;
+
+	  document.getElementById('archivados').innerHTML = data.estadisticas.archivados;
+
+const pendientes = document.getElementById('lista-pendientes');
+const revision = document.getElementById('lista-revision');
+const aprobados = document.getElementById('lista-aprobados');
+const publicados = document.getElementById('lista-publicados');
+const archivados = document.getElementById('lista-archivados');
+
+pendientes.innerHTML = '';
+revision.innerHTML = '';
+aprobados.innerHTML = '';
+publicados.innerHTML = '';
+archivados.innerHTML = '';
+
+data.articulos.forEach(articulo => {
+
+    const titulo =
+        articulo["titulo\n"] ||
+        articulo["titulo"];
+
+    const estado = articulo["estado"];
+
+    const li = document.createElement('li');
+    li.textContent = titulo;
+
+    if (estado === 'Pendiente')
+        pendientes.appendChild(li);
+
+    else if (estado === 'En revisión')
+        revision.appendChild(li);
+
+    else if (estado === 'Aprobado')
+        aprobados.appendChild(li);
+
+    else if (estado === 'Publicado')
+        publicados.appendChild(li);
+
+    else if (estado === 'Archivado')
+        archivados.appendChild(li);
+
+});
+
+});
 	  
   });
 </script>
