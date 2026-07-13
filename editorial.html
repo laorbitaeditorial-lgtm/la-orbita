@@ -219,12 +219,12 @@ fetch('datos-editoriales.json')
     console.log("Revision:", document.getElementById('revision'));
     console.log("Aprobados:", document.getElementById('aprobados'));
     console.log("Publicados:", document.getElementById('publicados'));
-
-    document.getElementById('pendientes').innerHTML = data.pendientes;
-    document.getElementById('revision').innerHTML = data.revision;
-    document.getElementById('aprobados').innerHTML = data.aprobados;
-    document.getElementById('publicados').innerHTML = data.publicados;
-
+	  
+document.getElementById('pendientes').innerHTML = data.estadisticas.pendientes;
+document.getElementById('revision').innerHTML = data.estadisticas.revision;
+document.getElementById('aprobados').innerHTML = data.estadisticas.aprobados;
+document.getElementById('publicados').innerHTML = data.estadisticas.publicados;
+    
   });
 </script>
 		
