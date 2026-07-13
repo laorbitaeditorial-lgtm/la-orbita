@@ -227,11 +227,26 @@ fetch('datos-editoriales.json')
     console.log("Publicados:", document.getElementById('publicados'));
 	console.log("Archivados:", document.getElementById('archivados'));
 	  
-document.getElementById('pendientes').innerHTML = data.estadisticas.pendientes;
-document.getElementById('revision').innerHTML = data.estadisticas.revision;
-document.getElementById('aprobados').innerHTML = data.estadisticas.aprobados;
-document.getElementById('publicados').innerHTML = data.estadisticas.publicados;
-document.getElementById('archivados').innerHTML = data.estadisticas.archivados;
+const pendientesNum =
+    data.articulos.filter(a => a.estado === 'Pendiente').length;
+
+const revisionNum =
+    data.articulos.filter(a => a.estado === 'En revisión').length;
+
+const aprobadosNum =
+    data.articulos.filter(a => a.estado === 'Aprobado').length;
+
+const publicadosNum =
+    data.articulos.filter(a => a.estado === 'Publicado').length;
+
+const archivadosNum =
+    data.articulos.filter(a => a.estado === 'Archivado').length;
+
+document.getElementById('pendientes').innerHTML = pendientesNum;
+document.getElementById('revision').innerHTML = revisionNum;
+document.getElementById('aprobados').innerHTML = aprobadosNum;
+document.getElementById('publicados').innerHTML = publicadosNum;
+document.getElementById('archivados').innerHTML = archivadosNum;
 
 
 
