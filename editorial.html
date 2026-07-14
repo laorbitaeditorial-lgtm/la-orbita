@@ -302,6 +302,10 @@ if (articulo["archivo"]) {
     `;
 }
 	
+console.log(
+    articulo["titulo"],
+    articulo["archivo"]
+);
     document.getElementById('detalle-articulo').innerHTML = `
         <strong>Título:</strong> ${titulo}<br>
         <strong>Autor:</strong> ${articulo["autor\n"] || articulo["autor"]}<br>
