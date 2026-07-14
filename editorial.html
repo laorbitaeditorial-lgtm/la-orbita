@@ -300,6 +300,10 @@ li.onclick = function () {
     <strong>Comentarios del autor:</strong><br>
     ${articulo.comentariosAutor || 'Sin comentarios'}
 
+	<br><br>
+<strong>Archivo adjunto:</strong><br>
+${articulo["archivo"] ? '📎Disponible para revisión' : 'Sin archivo'}
+
     `;
 
 };
