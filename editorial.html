@@ -292,11 +292,15 @@ li.onclick = function () {
 
 if (articulo["archivo"]) {
 
+	console.log(articulo["archivo"]);
+	
     const archivoData = JSON.parse(articulo["archivo"]);
+	console.log(archivoData);
+	
     const archivo = archivoData[0];
 
     archivoHTML = `
-     <a href="${archivo.link}" 
+     <a href="${archivo.link}" target="_blank" rel="noopener noreferrer">
 	 📎${archivo.name}
         </a>
     `;
