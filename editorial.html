@@ -288,6 +288,20 @@ console.log(articulo);
 	
 li.onclick = function () {
 
+	let archivoHTML = 'Sin archivo';
+
+if (articulo["archivo"]) {
+
+    const archivoData = JSON.parse(articulo["archivo"]);
+    const archivo = archivoData[0];
+
+    archivoHTML = `
+     <a href="${archivo.link}" 
+	 📎${archivo.name}
+        </a>
+    `;
+}
+	
     document.getElementById('detalle-articulo').innerHTML = `
         <strong>Título:</strong> ${titulo}<br>
         <strong>Autor:</strong> ${articulo["autor\n"] || articulo["autor"]}<br>
@@ -302,11 +316,7 @@ li.onclick = function () {
 
 	<br><br>
 <strong>Archivo adjunto:</strong><br>
-${articulo["archivo"] ? '📎Disponible para revisión' : 'Sin archivo'}
-
-<br><br>
-<strong>DEBUG Archivo:</strong><br>
-${articulo["archivo"]}
+${archivoHTML}
 
     `;
 
