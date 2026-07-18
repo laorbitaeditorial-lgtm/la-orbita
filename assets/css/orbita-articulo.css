@@ -71,6 +71,7 @@ h2{
 
 .logo{
     text-align:center !important;
+    border: 3px solid red;
 }
 
 .logo img{
