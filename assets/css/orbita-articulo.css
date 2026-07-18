@@ -1,1 +1,70 @@
+body{
+    margin:0;
+    background:#f1efe8;
+    font-family:Arial, sans-serif;
+}
 
+.articulo{
+    max-width:1100px;
+    margin:auto;
+    padding:40px;
+}
+
+.cabecera{
+    border-top:2px solid black;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-top:20px;
+}
+
+.fecha,
+.edicion{
+    font-weight:bold;
+    text-transform:uppercase;
+}
+
+.logo{
+    font-size:36px;
+    font-weight:bold;
+}
+
+.titulo-info{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    margin-top:50px;
+}
+
+h1{
+    font-size:54px;
+    margin:0;
+}
+
+.metadatos{
+    text-align:right;
+    font-weight:bold;
+}
+
+.portada{
+    width:100%;
+    margin-top:30px;
+}
+
+.contenido{
+    margin-top:30px;
+}
+
+h2{
+    font-size:36px;
+    text-transform:uppercase;
+}
+
+.subtitulo{
+    font-size:22px;
+}
+
+.pie{
+    border-top:2px solid black;
+    margin-top:80px;
+}
