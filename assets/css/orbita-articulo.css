@@ -70,11 +70,11 @@ h2{
 }
 
 .logo{
-    text-align:center;
+    text-align:center !important;
 }
 
 .logo img{
-    width:100px;
+    width:20px !important;
     height:auto;
     display:block;
     margin:auto;
