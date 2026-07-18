@@ -69,7 +69,13 @@ h2{
     margin-top:80px;
 }
 
+.logo{
+    text-align:center;
+}
+
 .logo img{
-    width:180px;
+    width:90px;
     height:auto;
+    display:block;
+    margin:auto;
 }
