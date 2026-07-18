@@ -1,6 +1,6 @@
 body{
     margin:0;
-    background:red;
+    background:#F8F4EF;
     font-family:Arial, sans-serif;
 }
 
@@ -75,7 +75,7 @@ h2{
 }
 
 .logo img{
-    width:20px !important;
+    width:60px !important;
     height:auto;
     display:block;
     margin:auto;
