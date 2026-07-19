@@ -79,3 +79,14 @@ h2{
     display:block;
     margin:auto;
 }
+
+details summary {
+    cursor: pointer;
+    font-size: 1.3em;
+    font-weight: bold;
+    list-style: none;
+}
+
+details summary::-webkit-details-marker {
+    display: none;
+}
