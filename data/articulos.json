@@ -1,1 +1,8 @@
-
+[
+  {
+    "titulo": "RoboTecPa",
+    "descripcion": "Conoce y aprende de nuestro último viaje a Pánuco.",
+    "imagen": "images/pic14.png",
+    "url": "articulos/robotecpa.html"
+  }
+]
