@@ -12,6 +12,43 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
+
+   <script>
+fetch('data/articulos.json')
+    .then(response => response.json())
+    .then(data => {
+
+        const contenedor = document.getElementById('contenedor-articulos');
+
+        data.forEach(articulo => {
+
+            contenedor.innerHTML += `
+                <article>
+
+                    ${articulo.url}
+                        ${articulo.imagen}
+                    </a>
+
+                    <h3>${articulo.titulo}</h3>
+
+                    <p>${articulo.descripcion}</p>
+
+                    <ul class="actions">
+                        <li>
+                            ${articulo.url}
+                                Ver más
+                            </a>
+                        </li>
+                    </ul>
+
+                </article>
+            `;
+
+        });
+
+    });
+</script>
+	
 	<body class="is-preload">
 
 		<!-- Wrapper -->
@@ -107,57 +144,8 @@
 									<header class="major">
 										<h2>Publicaciones recientes</h2>
 									</header>
-									<div class="posts">
-										<article>
-											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-											<h3>RoboTecPa</h3>
-											<p>Conoce y aprende de nuestro ultimo viaje a Pánuco y lo que realizamos allá.</p>
-											<ul class="actions">
-												<li><a href="articulos/robotecpa.html" class="button">Ver más</a></li>
-												
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
-											<h3>Colaboracón con IPT</h3>
-											<p>Este articulo relata nuestra colabración con el Instituto Panamericano de Tampico y los proyectos que hacemos en conjunto.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">Ver más</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
-											<h3>Historia del taller</h3>
-											<p>Descubre la historia del taller en este interesante artículo.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">Ver más</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
-											<h3>Sed etiam facilis</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">Ver más</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
-											<h3>Feugiat lorem aenean</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">Ver más</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
-											<h3>Amet varius aliquam</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">Ver más</a></li>
-											</ul>
-										</article>
-									</div>
+									
+								<div class="posts" id="contenedor-articulos"></div>
 								</section>
 
 						</div>
