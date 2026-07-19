@@ -1,1 +1,12 @@
+details {
+    margin-top: 0.5rem;
+}
 
+details summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+details p {
+    margin-top: 0.75rem;
+}
