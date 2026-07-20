@@ -219,8 +219,6 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-		 
-
 <script>
 fetch('data/articulos.json')
     .then(response => response.json())
@@ -233,17 +231,17 @@ fetch('data/articulos.json')
             contenedor.innerHTML += `
                 <article>
 
-                    ${articulo.url}
-                        ${articulo.imagen}
+                    <a href="${articulo.url}" target="_blank">
+                        <img src="${articulo.imagen}" alt="${articulo.titulo}">
                     </a>
 
                     <h3>${articulo.titulo}</h3>
 
                     <p>${articulo.descripcion}</p>
-			
-					<ul class="actions">
+
+                    <ul class="actions">
                         <li>
-                            ${articulo.url}
+                            <a href="${articulo.url}" class="button" target="_blank">
                                 Ver más
                             </a>
                         </li>
@@ -254,9 +252,9 @@ fetch('data/articulos.json')
 
         });
 
-    });
+    })
+    .catch(error => console.error('Error al cargar el JSON:', error));
 </script>
-
 					
 	</body>
 </html>
