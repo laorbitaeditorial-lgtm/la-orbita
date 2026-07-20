@@ -220,6 +220,7 @@
 			<script src="assets/js/main.js"></script>
 
 		 
+
 <script>
 fetch('data/articulos.json')
     .then(response => response.json())
@@ -239,8 +240,8 @@ fetch('data/articulos.json')
                     <h3>${articulo.titulo}</h3>
 
                     <p>${articulo.descripcion}</p>
-
-                    <ul class="actions">
+			
+					<ul class="actions">
                         <li>
                             ${articulo.url}
                                 Ver más
@@ -255,6 +256,7 @@ fetch('data/articulos.json')
 
     });
 </script>
-		
+
+					
 	</body>
 </html>
