@@ -10,3 +10,25 @@ details summary {
 details p {
     margin-top: 0.75rem;
 }
+
+details {
+    margin-top: 0.4rem;
+}
+
+details summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+details p {
+    margin-top: 0.75rem;
+}
+
+/* PUBLICACIONES RECIENTES */
+
+#contenedor-articulos article .*mage img{
+    width: 180px;
+    he*ght: auto;
+    display: block;
+   *margin: 0 auto;
+}
