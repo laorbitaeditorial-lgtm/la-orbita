@@ -12,42 +12,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
-
-  <script>
-fetch('data/articulos.json')
-    .then(response => response.json())
-    .then(data => {
-
-        const contenedor = document.getElementById('contenedor-articulos');
-
-        data.forEach(articulo => {
-
-            contenedor.innerHTML += `
-                <article>
-
-                    ${articulo.url}
-                        ${articulo.imagen}
-                    </a>
-
-                    <h3>${articulo.titulo}</h3>
-
-                    <p>${articulo.descripcion}</p>
-
-                    <ul class="actions">
-                        <li>
-                            ${articulo.url}
-                                Ver más
-                            </a>
-                        </li>
-                    </ul>
-
-                </article>
-            `;
-
-        });
-
-    });
-</script>
 	
 	<body class="is-preload">
 
@@ -254,5 +218,41 @@ fetch('data/articulos.json')
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+		 <script>
+fetch('data/articulos.json')
+    .then(response => response.json())
+    .then(data => {
+
+        const contenedor = document.getElementById('contenedor-articulos');
+
+        data.forEach(articulo => {
+
+            contenedor.innerHTML += `
+                <article>
+
+                    ${articulo.url}
+                        ${articulo.imagen}
+                    </a>
+
+                    <h3>${articulo.titulo}</h3>
+
+                    <p>${articulo.descripcion}</p>
+
+                    <ul class="actions">
+                        <li>
+                            ${articulo.url}
+                                Ver más
+                            </a>
+                        </li>
+                    </ul>
+
+                </article>
+            `;
+
+        });
+
+    });
+</script>
+		
 	</body>
 </html>
