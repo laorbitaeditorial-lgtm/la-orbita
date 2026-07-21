@@ -11,8 +11,9 @@
 
     padding-top:1rem;
 
-    margin-bottom:3rem;
+    margin-bottom:4rem;
 }
+
 
 .header-fecha{
     border-right:2px solid #111;
@@ -22,4 +23,25 @@
 .header-numero{
     border-left:2px solid #111;
     padding-left:20px;
+}
+
+body{
+    max-width:1100px;
+    margin:auto;
+    padding:2rem;
+}
+
+.header-logo{
+    font-size:2rem;
+    font-weight:bold;
+}
+
+.titulo-articulo{
+    font-size:4rem;
+    margin-bottom:2rem;
+}
+
+.metadatos{
+    text-align:right;
+    margin-bottom:2rem;
 }
