@@ -45,3 +45,9 @@ body{
     text-align:right;
     margin-bottom:0.5rem;
 }
+
+.header-logo img{
+    height:80px;
+    width:auto;
+    display:block;
+}
