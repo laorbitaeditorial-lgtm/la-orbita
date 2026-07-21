@@ -60,3 +60,14 @@ body{
 body{
     background-color:#F5F0E9 !important;
 }
+
+.portada{
+    margin-top:2rem;
+    margin-bottom:2rem;
+}
+
+.portada img{
+    width:100%;
+    height:auto;
+    display:block;
+}
