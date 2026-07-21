@@ -55,3 +55,7 @@ body{
 .logo-central{
     text-align: center;
 }
+
+body{
+    background-color:#F4F1EC !important;
+}
