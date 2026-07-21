@@ -51,3 +51,12 @@ body{
     width:auto;
     display:block;
 }
+
+.titulo-logo{
+    text-align: center;
+}
+
+.titulo-logo img{
+    width: 300px;
+    height: auto;
+}
