@@ -39,6 +39,7 @@ body{
 .titulo-articulo{
     font-size:4rem;
     margin-bottom:0.5rem;
+    text-align:center;
 }
 
 .metadatos{
