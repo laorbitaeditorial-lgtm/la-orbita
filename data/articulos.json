@@ -4,5 +4,11 @@
     "descripcion": "Conoce y aprende de nuestro último viaje a Pánuco.",
     "imagen": "images/pic05.jpg",
     "url": "articulos/robotecpa.html"
+  },
+  {
+    "titulo": "Historia del Taller de Robótica",
+    "descripcion": "Los orígenes, evolución y legado del Taller de Robótica del Tec Madero.",
+    "imagen": "images/historia.jpg",
+    "url": "articulos/historia-taller.html"
   }
 ]
