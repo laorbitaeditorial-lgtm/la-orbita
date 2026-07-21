@@ -1,81 +1,25 @@
-body{
-    margin:0;
-    background:#F7f3f0;
-    font-family:Arial, sans-serif;
-}
+/* ==================================
+   LA ÓRBITA - PLANTILLA EDITORIAL
+================================== */
 
-.articulo{
-    max-width:1100px;
-    margin:auto;
-    padding:40px;
-}
-
-.cabecera{
-    border-top:2px solid black;
+.orbita-header{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding-top:20px;
+
+    border-top:2px solid #111;
+
+    padding-top:1rem;
+
+    margin-bottom:3rem;
 }
 
-.fecha,
-.edicion{
-    font-weight:bold;
-    text-transform:uppercase;
+.header-fecha{
+    border-right:2px solid #111;
+    padding-right:20px;
 }
 
-.logo{
-    font-size:36px;
-    font-weight:bold;
-}
-
-.titulo-info{
-    display:flex;
-    justify-content:space-between;
-    align-items:flex-start;
-    margin-top:50px;
-}
-
-h1{
-    font-size:54px;
-    margin:0;
-}
-
-.metadatos{
-    text-align:right;
-    font-weight:bold;
-}
-
-.portada{
-    width:100%;
-    margin-top:30px;
-}
-
-.contenido{
-    margin-top:30px;
-}
-
-h2{
-    font-size:36px;
-    text-transform:uppercase;
-}
-
-.subtitulo{
-    font-size:22px;
-}
-
-.pie{
-    border-top:2px solid black;
-    margin-top:80px;
-}
-
-.logo{
-    text-align:center !important;
-}
-
-.logo img{
-    width:150px !important;
-    height:auto;
-    display:block;
-    margin:auto;
+.header-numero{
+    border-left:2px solid #111;
+    padding-left:20px;
 }
