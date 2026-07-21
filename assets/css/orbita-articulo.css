@@ -47,7 +47,7 @@ body{
 }
 
 .logo-central img{
-    height:100px;
+    height:150px;
     width:auto;
     display:block;
 }
@@ -57,5 +57,5 @@ body{
 }
 
 body{
-    background-color:#F1EEE9 !important;
+    background-color:#F5F0E9 !important;
 }
