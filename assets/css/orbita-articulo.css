@@ -38,10 +38,10 @@ body{
 
 .titulo-articulo{
     font-size:4rem;
-    margin-bottom:1rem;
+    margin-bottom:0.5rem;
 }
 
 .metadatos{
     text-align:right;
-    margin-bottom:1rem;
+    margin-bottom:0.5rem;
 }
