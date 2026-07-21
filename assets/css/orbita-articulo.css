@@ -71,3 +71,35 @@ body{
     height:auto;
     display:block;
 }
+
+.subtitulo{
+    font-size:1.4rem;
+    text-align:center;
+    font-style:italic;
+    margin-bottom:2rem;
+}
+
+.contenido{
+    margin-top:2rem;
+    line-height:1.9;
+    text-align:justify;
+    font-size:1.1rem;
+}
+
+.contenido h2{
+    margin-top:3rem;
+    margin-bottom:1rem;
+    font-size:2rem;
+}
+
+.pie-editorial{
+    text-align:center;
+    margin-top:5rem;
+    margin-bottom:2rem;
+}
+.pie-editorial h3{
+    margin-top:1.5rem;
+}
+.pie-editorial p{
+    color:#555;
+}
