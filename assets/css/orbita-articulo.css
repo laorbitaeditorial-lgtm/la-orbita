@@ -46,17 +46,12 @@ body{
     margin-bottom:0.5rem;
 }
 
-.header-logo img{
+.logo-central img{
     height:80px;
     width:auto;
     display:block;
 }
 
-.titulo-logo{
+.logo-central{
     text-align: center;
-}
-
-.titulo-logo img{
-    width: 90px;
-    height: auto;
 }
