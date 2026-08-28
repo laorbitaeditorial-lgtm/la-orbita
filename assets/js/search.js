@@ -56,20 +56,14 @@ function mostrarResultados(resultados) {
     resultados.forEach(item => {
 
         contenedor.innerHTML += `
-            <article>
-
-                <h4>
-                <a href="${item.url}">
-                        ${item.titulo}
-                    </a>
-                </h4>
-
-                <p>
-                    ${item.descripcion}
-                </p>
-
-            </article>
-        `;
+  <article>
+    <h4>
+      <a href="${item.url}">
+        ${item.titulo}
+      </a>
+    </h4>
+  </article>
+`; 
     });
 
 }
