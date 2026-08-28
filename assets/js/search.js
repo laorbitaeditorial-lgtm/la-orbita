@@ -44,8 +44,7 @@ function mostrarResultados(resultados) {
 
     resultados.forEach(item => {
 
-        contenedor.innerHTML += `
-            <article class="mini-post">
+        
             function mostrarResultados(resultados) {
 
     const contenedor =
@@ -56,7 +55,7 @@ function mostrarResultados(resultados) {
     resultados.forEach(item => {
 
         contenedor.innerHTML += `
-  <article>
+  <article class="mini-post">
     <h4>
       <a href="${item.url}">
         ${item.titulo}
