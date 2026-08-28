@@ -46,26 +46,25 @@ function mostrarResultados(resultados) {
 
         
             function mostrarResultados(resultados) {
-
-    const contenedor =
-        document.getElementById('search-results');
-
+    const contenedor = document.getElementById('search-results');
+    
+    // 1. Limpiamos el contenedor antes de la nueva búsqueda
     contenedor.innerHTML = '';
 
+    // 2. Recorremos los resultados e insertamos el HTML
     resultados.forEach(item => {
-
         contenedor.innerHTML += `
-  <article class="mini-post">
-    <h4>
-      <a href="${item.url}">
-        ${item.titulo}
-      </a>
-    </h4>
-  </article>
-`; 
-    });
+            <article class="mini-post">
+                <h4>
+                    <a href="${item.url}">
+                        ${item.titulo}
+                    </a>
+                </h4>
+            </article>
+        `;
+    }); // <- Aquí se cierra correctamente el forEach
+} // <- Aquí se cierra correctamente la función
 
-}
                 }
                 
             </article>
