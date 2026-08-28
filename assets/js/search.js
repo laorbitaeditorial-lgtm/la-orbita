@@ -64,8 +64,6 @@ function mostrarResultados(resultados) {
         `;
     }); // <- Aquí se cierra correctamente el forEach
 } // <- Aquí se cierra correctamente la función
-
-                }
                 
             </article>
         `;
