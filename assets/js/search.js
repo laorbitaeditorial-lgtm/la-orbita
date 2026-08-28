@@ -59,7 +59,7 @@ function mostrarResultados(resultados) {
             <article>
 
                 <h4>
-                    ${item.url}
+                <a href="${item.url}">
                         ${item.titulo}
                     </a>
                 </h4>
